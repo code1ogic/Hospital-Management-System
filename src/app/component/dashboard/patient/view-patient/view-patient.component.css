@@ -1,0 +1,10 @@
+span {
+  font-size: larger;
+  font-weight: 300;
+  margin-right: 15px;
+}
+
+.mat-card-title {
+  font-weight: 300!important;
+  font-size: 25px;
+}

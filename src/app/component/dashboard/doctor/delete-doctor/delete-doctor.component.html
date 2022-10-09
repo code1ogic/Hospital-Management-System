@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <p>Are you sure you want to delete {{doctorName}} ? </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="close()">No Thanks</button>
+  <button mat-raised-button color="accent"  (click)="delete()">Delete</button>
+</div>

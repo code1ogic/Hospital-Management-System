@@ -1,0 +1,18 @@
+span {
+  font-size: larger;
+  font-weight: 300;
+}
+
+.mat-card-title {
+  font-weight: 300!important;
+  font-size: 25px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

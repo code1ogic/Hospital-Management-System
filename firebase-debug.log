@@ -1,0 +1,89 @@
+[debug] [2022-10-08T05:23:44.601Z] ----------------------------------------------------------------------
+[debug] [2022-10-08T05:23:44.606Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Prajyot Halingale\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-08T05:23:44.608Z] CLI Version:   11.14.1
+[debug] [2022-10-08T05:23:44.608Z] Platform:      win32
+[debug] [2022-10-08T05:23:44.608Z] Node Version:  v16.17.0
+[debug] [2022-10-08T05:23:44.610Z] Time:          Sat Oct 08 2022 10:53:44 GMT+0530 (India Standard Time)
+[debug] [2022-10-08T05:23:44.611Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-08T05:23:44.793Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-08T05:23:44.794Z] > authorizing via signed-in user (techtalkwithprajyot@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Youtube\Code logic\Projects\Angular  Firebase\hospital-management
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-08T05:24:01.155Z] Using project from CLI flag: hospital-management-2dfc1
+[debug] [2022-10-08T05:24:01.169Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hospital-management-2dfc1 [none]
+[debug] [2022-10-08T05:24:02.686Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hospital-management-2dfc1 200
+[debug] [2022-10-08T05:24:02.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hospital-management-2dfc1 {"projectId":"hospital-management-2dfc1","projectNumber":"393945648816","displayName":"hospital-management","name":"projects/hospital-management-2dfc1","resources":{"hostingSite":"hospital-management-2dfc1","realtimeDatabaseInstance":"hospital-management-2dfc1-default-rtdb","storageBucket":"hospital-management-2dfc1.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE","etag":"1_3706605f-d4f9-441d-9d5d-7e02bde943da"}
+[info] i  Using project hospital-management-2dfc1 (hospital-management) 
+[info] 
+=== Firestore Setup
+[debug] [2022-10-08T05:24:02.731Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/hospital-management-2dfc1/services/firestore.googleapis.com [none]
+[debug] [2022-10-08T05:24:02.732Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/hospital-management-2dfc1/services/firestore.googleapis.com x-goog-quota-user=projects/hospital-management-2dfc1
+[debug] [2022-10-08T05:24:05.522Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/hospital-management-2dfc1/services/firestore.googleapis.com 200
+[debug] [2022-10-08T05:24:05.523Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/hospital-management-2dfc1/services/firestore.googleapis.com [omitted]
+[debug] [2022-10-08T05:24:05.524Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/hospital-management-2dfc1 [none]
+[debug] [2022-10-08T05:24:06.396Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/hospital-management-2dfc1 200
+[debug] [2022-10-08T05:24:06.398Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/hospital-management-2dfc1 {"name":"apps/hospital-management-2dfc1","id":"hospital-management-2dfc1","authDomain":"gmail.com","locationId":"asia-northeast3","codeBucket":"staging.hospital-management-2dfc1.appspot.com","servingStatus":"SERVING","defaultHostname":"hospital-management-2dfc1.du.r.appspot.com","defaultBucket":"hospital-management-2dfc1.appspot.com","serviceAccount":"hospital-management-2dfc1@appspot.gserviceaccount.com","gcrDomain":"asia.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-10-08T05:24:06.398Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-10-08T05:24:06.400Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-08T05:24:06.401Z] > authorizing via signed-in user (techtalkwithprajyot@gmail.com)
+[debug] [2022-10-08T05:24:06.401Z] [iam] checking project hospital-management-2dfc1 for permissions ["firebase.projects.get"]
+[debug] [2022-10-08T05:24:06.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-management-2dfc1:testIamPermissions [none]
+[debug] [2022-10-08T05:24:06.404Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-management-2dfc1:testIamPermissions x-goog-quota-user=projects/hospital-management-2dfc1
+[debug] [2022-10-08T05:24:06.404Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-management-2dfc1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-10-08T05:24:08.801Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-management-2dfc1:testIamPermissions 200
+[debug] [2022-10-08T05:24:08.802Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hospital-management-2dfc1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-10-08T05:24:13.194Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/hospital-management-2dfc1/releases pageSize=10&pageToken=
+[debug] [2022-10-08T05:24:15.556Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/hospital-management-2dfc1/releases 200
+[debug] [2022-10-08T05:24:15.557Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/hospital-management-2dfc1/releases {"releases":[{"name":"projects/hospital-management-2dfc1/releases/cloud.firestore","rulesetName":"projects/hospital-management-2dfc1/rulesets/88632343-5ff0-4fc0-bd12-18a111ab1c64","createTime":"2022-10-02T07:52:24.894370Z","updateTime":"2022-10-08T05:17:54.712096Z"}]}
+[debug] [2022-10-08T05:24:15.557Z] Found ruleset: projects/hospital-management-2dfc1/rulesets/88632343-5ff0-4fc0-bd12-18a111ab1c64
+[debug] [2022-10-08T05:24:15.558Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/hospital-management-2dfc1/rulesets/88632343-5ff0-4fc0-bd12-18a111ab1c64 [none]
+[debug] [2022-10-08T05:24:17.398Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/hospital-management-2dfc1/rulesets/88632343-5ff0-4fc0-bd12-18a111ab1c64 200
+[debug] [2022-10-08T05:24:17.398Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/hospital-management-2dfc1/rulesets/88632343-5ff0-4fc0-bd12-18a111ab1c64 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-10-08T05:24:30.041Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/hospital-management-2dfc1/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-10-08T05:24:30.045Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/hospital-management-2dfc1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-10-08T05:24:31.942Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/hospital-management-2dfc1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-10-08T05:24:31.942Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/hospital-management-2dfc1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/hospital-management-2dfc1/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2022-10-08T05:24:31.943Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/hospital-management-2dfc1/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-10-08T05:24:31.944Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/hospital-management-2dfc1/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-10-08T05:24:57.023Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-10-08T05:24:57.486Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-10-08T05:24:57.486Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.11.0","browserURL":"https://www.gstatic.com/firebasejs/9.11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.11.0/firebase.tgz"},"live":{"version":"9.11","browserURL":"https://www.gstatic.com/firebasejs/live/9.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.11/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.11.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.11.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.11.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.11.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.11.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.11.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.11.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.11.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.11.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.memory.js"}}

@@ -1,0 +1,86 @@
+<h2 mat-dialog-tile> {{ title }} </h2>
+<mat-divider></mat-divider>
+
+<mat-dialog-content [formGroup] = "form">
+
+    <mat-grid-list cols="2">
+
+      <mat-grid-tile>
+        <div>
+          <mat-form-field>
+            <mat-label>Full name</mat-label>
+            <input matInput
+                    placeholder="Ex. code logic"
+                    formControlName="name"
+                    required>
+            <mat-error *ngIf="form.get('name')?.invalid || form.get('name')?.dirty || form.get('name')?.touched">Enter full name</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Mobile number : </mat-label>
+            <input matInput
+                    placeholder="9865452152"
+                    formControlName="mobile"
+                    required>
+            <mat-error *ngIf="form.get('mobile')?.invalid || form.get('mobile')?.dirty || form.get('mobile')?.touched">Enter valid mobile number</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput
+                    placeholder="pat@example.com"
+                    formControlName="email"
+                    required>
+            <mat-error *ngIf="form.get('email')?.invalid || form.get('email')?.dirty || form.get('email')?.touched">Enter valid email address </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Qualification</mat-label>
+            <input matInput
+                    placeholder="ex. MBBS"
+                    formControlName="qualification"
+                    required>
+            <mat-error *ngIf="form.get('qualification')?.invalid || form.get('qualification')?.dirty || form.get('qualification')?.touched">Enter valid qualification </mat-error>
+          </mat-form-field>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div>
+          <mat-label class="me-3">Gender : </mat-label>
+          <br>
+          <mat-radio-group aria-label="Select a gender" color="primary" formControlName="gender">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+            <mat-radio-button value="other">Other</mat-radio-button>
+          </mat-radio-group>
+
+          <mat-form-field class="mt-4">
+            <mat-label>Department</mat-label>
+            <mat-select formControlName="department" name="department">
+              <mat-option *ngFor="let department of departments" [value]="department">
+                {{department}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Birthdate</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="birthdate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="form.get('birthdate')?.invalid || form.get('birthdate')?.dirty || form.get('birthdate')?.touched">Choose valid birthdate</mat-error>
+          </mat-form-field>
+
+        </div>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+</mat-dialog-content>
+
+<div mat-dialog-actions>
+  <button mat-raised-button mat-dialog-close (click)="cancelRegistration()">Cancel</button>
+  <button mat-raised-button color="primary" mat-dialog-close (click)="registerDoctor()" [disabled]="form.invalid"> {{buttonName}} </button>
+</div>

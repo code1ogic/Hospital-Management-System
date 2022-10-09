@@ -1,0 +1,36 @@
+<div class="row mt-5">
+  <div class="col"></div>
+  <div class="col">
+
+    <mat-card>
+      <div [formGroup] = "form">
+          <mat-card-title>Login</mat-card-title>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput
+                    placeholder="pat@example.com"
+                    formControlName="email"
+                    required>
+            <mat-error *ngIf="form.get('email')?.invalid || form.get('email')?.dirty || form.get('email')?.touched">Enter valid email address </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput
+                    placeholder=""
+                    formControlName="password"
+                    required
+                    type="password">
+            <mat-error *ngIf="form.get('password')?.invalid || form.get('password')?.dirty || form.get('password')?.touched">Enter valid qualification </mat-error>
+          </mat-form-field>
+      </div>
+
+      <div >
+          <button mat-raised-button color="primary" (click)="login()" class="mt-3" [disabled]="form.invalid"> Login </button>
+      </div>
+
+    </mat-card>
+
+  </div>
+  <div class="col"></div>
+</div>

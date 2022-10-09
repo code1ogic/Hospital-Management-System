@@ -1,0 +1,11 @@
+.mat-dialog-content {
+  width: 600px;
+}
+
+.mat-grid-list {
+  overflow: hidden;
+}
+
+.mat-radio-button {
+  margin-right: 15px;
+}
